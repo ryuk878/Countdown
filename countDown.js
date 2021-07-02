@@ -43,7 +43,6 @@ const date = futureDate.getDate();
 const weekday = weekdays[futureDate.getDay()];
 //text naar html
 
-countDown.textContent = `countdown ends on :  ${weekday} ${date}  ${month} ${hours}: ${minutes} pm ${year}`;
 const futureTime = futureDate.getTime();
 // function & berekening ms naar minuut/uur/dag
 function getRemainingTime() {

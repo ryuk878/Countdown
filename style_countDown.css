@@ -128,7 +128,7 @@ h1,h2 {
     background-repeat: repeat;
     
   
-    background-clip: text;
+    -webkit-background-clip: text ;
     -webkit-text-fill-color: transparent; 
     
     /* Animate the text when loading the element. */
@@ -164,8 +164,8 @@ span {
     background-size: 100%;
     background-repeat: repeat;
     
-  
-    background-clip: text;
+    
+    -webkit-background-clip: text ;
     -webkit-text-fill-color: transparent; 
     
     /* Animate the text when loading the element. */
@@ -196,3 +196,4 @@ right: 700px;
 transform: scaleX(-1);
 
 }
+
