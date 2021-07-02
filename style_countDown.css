@@ -197,3 +197,11 @@ transform: scaleX(-1);
 
 }
 
+@media  screen and (max-width: 1920px) {
+  * { 
+    scale:0.9;
+  }
+  .container2 { 
+    width: 1700px;
+  }
+}
