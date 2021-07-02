@@ -28,7 +28,7 @@ const deadline = document.querySelector(".deadline");
 const time = document.querySelectorAll(".container h4");
 //datum invoeren
 
-let futureDate = new Date(2021, 6, 2, 16, 30, 0);
+let futureDate = new Date(2021, 6, 9, 12, 00, 0);
 // get functies
 
 const year = futureDate.getFullYear();
