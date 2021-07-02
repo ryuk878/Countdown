@@ -1,0 +1,119 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body { 
+    background-image: linear-gradient(to right, #fa709a 0%, #f3ebc0 100%);
+}
+h1,h2 { 
+    text-align: center;
+    font-size: 80px;
+    color: rgb(40, 44, 0);
+}
+
+    .rainbow {
+        /* Create a conic gradient. */
+        /* Double percentages to avoid blur (#000 10%, #fff 10%, #fff 20%, ...). */
+        background: #CA4246;
+        background-color: #CA4246;
+        background: conic-gradient(
+          #CA4246 16.666%, 
+          #E16541 16.666%, 
+          #E16541 33.333%, 
+          #F18F43 33.333%, 
+          #F18F43 50%, 
+          #8B9862 50%, 
+          #8B9862 66.666%, 
+          #476098 66.666%, 
+          #476098 83.333%, 
+          #A7489B 83.333%);
+        
+        /* Set thee background size and repeat properties. */
+        background-size: 57%;
+        background-repeat: repeat;
+        
+      
+        background-clip: text;
+        -webkit-text-fill-color: transparent; 
+        
+        /* Animate the text when loading the element. */
+        /* This animates it on page load and when hovering out. */
+        animation: rainbow-text-animation-rev 5s ease forwards;
+      
+        cursor: pointer;
+      }
+      .rainbow-text:hover {
+  animation: rainbow-text-animation 5s ease forwards;
+}
+
+/* Move the background and make it larger. */
+/* Animation shown when hovering over the text. */
+@keyframes rainbow-text-animation {
+  0% {
+    background-size: 57%;
+    background-position: 0 0;
+  }
+  20% {
+    background-size: 57%;
+    background-position: 0 1em;
+  }
+  100% {
+    background-size: 300%;
+    background-position: -9em 1em;
+  }
+}
+
+/* Move the background and make it smaller. */
+/* Animation shown when entering the page and after the hover animation. */
+@keyframes rainbow-text-animation-rev {
+  0% {
+    background-size: 300%;
+    background-position: -9em 1em;
+  }
+  20% {
+    background-size: 57%;
+    background-position: 0 1em;
+  }
+  100% {
+    background-size: 57%;
+    background-position: 0 0;
+  }
+}
+
+
+      
+.container { 
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+    font-size: 50px;
+    justify-content: center;
+   
+  
+    
+   
+}
+.days, .hours, .minutes, .seconds, span{ 
+    width: 200px;
+    height: 200px;
+    border: 3px solid black;
+    font-size: 40px;
+    text-align: center;
+    gap: 20px;
+    padding: 50px;
+    color: white;
+    background-color: teal;
+    border-radius: 10px 10px 10px 10px;
+    
+}
+span { 
+    display: flex;
+    width: 200px;
+    height: 200px;
+   justify-content: center;
+    background-color: rgb(97, 114, 97);
+    color: rgb(133, 18, 41);
+   
+}
