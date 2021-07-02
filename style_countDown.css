@@ -1,55 +1,56 @@
-@import url("https://fonts.googleapis.com/css2?family=Yomogi&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  -webkit-appearance: none;
-  -moz-appearance: none;
+@import url('https://fonts.googleapis.com/css2?family=Yomogi&display=swap');
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
 }
 
-body {
-  background-image: linear-gradient(to right, #e794ad 0%, #f6e16a 100%);
-  font-family: "Yomogi", cursive;
+body { 
+    background-image: linear-gradient(to right, #e794ad 0%, #f6e16a 100%);
+    font-family: 'Yomogi', cursive;
 }
-h1,
-h2 {
-  text-align: center;
-  font-size: 80px;
-  color: rgb(40, 44, 0);
+h1,h2 { 
+    text-align: center;
+    font-size: 80px;
+    color: rgb(40, 44, 0);
+    
+  
 }
 
-.rainbow {
-  /* Create a conic gradient. */
-  /* Double percentages to avoid blur (#000 10%, #fff 10%, #fff 20%, ...). */
-  background: #ca4246;
-  background-color: #ca4246;
-  background: conic-gradient(
-    #ca4246 16.666%,
-    #e16541 16.666%,
-    #e16541 33.333%,
-    #f18f43 33.333%,
-    #f18f43 50%,
-    #8b9862 50%,
-    #8b9862 66.666%,
-    #476098 66.666%,
-    #476098 83.333%,
-    #a7489b 83.333%
-  );
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  /* Set thee background size and repeat properties. */
-  background-size: 57%;
-  background-repeat: repeat;
-
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-
-  /* Animate the text when loading the element. */
-  /* This animates it on page load and when hovering out. */
-  animation: rainbow-text-animation-rev 5s ease forwards;
-}
-.rainbow-text:hover {
+    .rainbow {
+        /* Create a conic gradient. */
+        /* Double percentages to avoid blur (#000 10%, #fff 10%, #fff 20%, ...). */
+        background: #CA4246;
+        background-color: #CA4246;
+        background: conic-gradient(
+          #CA4246 16.666%, 
+          #E16541 16.666%, 
+          #E16541 33.333%, 
+          #F18F43 33.333%, 
+          #F18F43 50%, 
+          #8B9862 50%, 
+          #8B9862 66.666%, 
+          #476098 66.666%, 
+          #476098 83.333%, 
+          #A7489B 83.333%);
+        
+        /* Set thee background size and repeat properties. */
+        background-size: 57%;
+        background-repeat: repeat;
+        
+      
+        -webkit-background-clip: text ;
+        background-clip: text ;
+        -webkit-text-fill-color: transparent; 
+        
+        /* Animate the text when loading the element. */
+        /* This animates it on page load and when hovering out. */
+        animation: rainbow-text-animation-rev 5s ease forwards;
+      
+       
+      }
+      .rainbow-text:hover {
   animation: rainbow-text-animation 5s ease forwards;
 }
 
@@ -87,133 +88,125 @@ h2 {
   }
 }
 
-.container {
-  display: flex;
-  padding: 20px;
-  gap: 20px;
-  font-size: 50px;
-  justify-content: center;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-}
-.days,
-.hours,
-.minutes,
-.seconds,
-span {
-  width: 200px;
-  height: 200px;
-  font-size: 90px;
-  text-align: center;
-  gap: 20px;
-  padding: 35px;
-  color: white;
-  background-color: rgb(241, 150, 98);
-  border-radius: 10px 10px 10px 10px;
-  background: #ca4246;
-  background-color: #ca4246;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  background: conic-gradient(
-    #ca4246 16.666%,
-    #e16541 16.666%,
-    #e16541 33.333%,
-    #f18f43 33.333%,
-    #f18f43 50%,
-    #8b9862 50%,
-    #8b9862 66.666%,
-    #476098 66.666%,
-    #476098 83.333%,
-    #a7489b 83.333%
+
+      
+.container { 
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+    font-size: 50px;
+    justify-content: center;
+   
+  
     
-  );
-
-  /* Set thee background size and repeat properties. */
-  background-size: 57%;
-  background-repeat: repeat;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-
-  /* Animate the text when loading the element. */
-  /* This animates it on page load and when hovering out. */
-  animation: rainbow-text-animation-rev 5s ease forwards;
+   
 }
-span {
-  display: flex;
-  width: 200px;
-  height: 200px;
-  justify-content: center;
-  background-color: rgb(97, 114, 97);
-  color: rgb(133, 18, 41);
-  font-size: 50px;
-  padding: 40px;
-  background: #ca4246;
-  background-color: #ca4246;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  background: conic-gradient(
-    #ca4246 16.666%,
-    #e16541 16.666%,
-    #e16541 33.333%,
-    #f18f43 33.333%,
-    #f18f43 50%,
-    #8b9862 50%,
-    #8b9862 66.666%,
-    #476098 66.666%,
-    #476098 83.333%,
-    #a7489b 83.333%
-  );
-
-  /* Set thee background size and repeat properties. */
-  background-size: 100%;
-  background-repeat: repeat;
-
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-
-  /* Animate the text when loading the element. */
-  /* This animates it on page load and when hovering out. */
-  animation: rainbow-text-animation-rev 5s ease forwards;
+.days, .hours, .minutes, .seconds, span{ 
+    width: 200px;
+    height: 200px;
+    font-size: 90px;
+    text-align: center;
+    gap: 20px;
+    padding: 35px;
+    color: white;
+    background-color: rgb(241, 150, 98);
+    border-radius: 10px 10px 10px 10px; 
+    background: #CA4246;
+    background-color: #CA4246;
+    background: conic-gradient(
+      #CA4246 16.666%, 
+      #E16541 16.666%, 
+      #E16541 33.333%, 
+      #F18F43 33.333%, 
+      #F18F43 50%, 
+      #8B9862 50%, 
+      #8B9862 66.666%, 
+      #476098 66.666%, 
+      #476098 83.333%, 
+      #A7489B 83.333%);
+    
+    /* Set thee background size and repeat properties. */
+    background-size: 57%;
+    background-repeat: repeat;
+    
+  
+    -webkit-background-clip: text ;
+    background-clip: text ;
+    -webkit-text-fill-color: transparent; 
+    
+    /* Animate the text when loading the element. */
+    /* This animates it on page load and when hovering out. */
+    animation: rainbow-text-animation-rev 5s ease forwards;
+    
+    
+}
+span { 
+    display: flex;
+    width: 200px;
+    height: 200px;
+   justify-content: center;
+    background-color: rgb(97, 114, 97);
+    color: rgb(133, 18, 41);
+    font-size: 50px;
+    padding: 40px;
+    background: #CA4246;
+    background-color: #CA4246;
+    background: conic-gradient(
+      #CA4246 16.666%, 
+      #E16541 16.666%, 
+      #E16541 33.333%, 
+      #F18F43 33.333%, 
+      #F18F43 50%, 
+      #8B9862 50%, 
+      #8B9862 66.666%, 
+      #476098 66.666%, 
+      #476098 83.333%, 
+      #A7489B 83.333%);
+    
+    /* Set thee background size and repeat properties. */
+    background-size: 100%;
+    background-repeat: repeat;
+    
+    
+    -webkit-background-clip: text ;
+    background-clip: text ;
+    -webkit-text-fill-color: transparent; 
+    
+    /* Animate the text when loading the element. */
+    /* This animates it on page load and when hovering out. */
+    animation: rainbow-text-animation-rev 5s ease forwards;
+   
 }
 
-p {
-  position: absolute;
-  margin-left: 185px;
-  margin-top: -170px;
-  font-size: 100px;
-  -webkit-appearance: none;
-  -moz-appearance: none;
+p { 
+
+position: absolute;
+margin-left: 185px;
+margin-top: -170px;
+font-size: 100px;
+
+
 }
-.container2 {
+.container2 { 
   width: 2000px;
-  position: absolute;
-  -webkit-appearance: none;
-  -moz-appearance: none;
+position: absolute;
+
 }
-.image {
-  position: absolute;
-  right: 700px;
-  -webkit-appearance: none;
-  -moz-appearance: none;
+.image{ 
+position: absolute;
+right: 700px;
 }
-.image2 {
-  transform: scaleX(-1);
-  -webkit-appearance: none;
-  -moz-appearance: none;
+.image2{ 
+transform: scaleX(-1);
+
 }
 
-@media screen and (max-width: 1920px) {
-  * {
-    scale: 0.8.5;
-    -webkit-appearance: none;
-    -moz-appearance: none;
+@media  screen and (max-width: 1920px) {
+  * { 
+    scale:0.85;
   }
-  .container2 {
+  .container2 { 
     width: 1700px;
+    
   }
 }
