@@ -93,6 +93,8 @@ h2 {
   gap: 20px;
   font-size: 50px;
   justify-content: center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 .days,
 .hours,
@@ -110,6 +112,8 @@ span {
   border-radius: 10px 10px 10px 10px;
   background: #ca4246;
   background-color: #ca4246;
+  -webkit-appearance: none;
+  -moz-appearance: none;
   background: conic-gradient(
     #ca4246 16.666%,
     #e16541 16.666%,
@@ -121,11 +125,14 @@ span {
     #476098 66.666%,
     #476098 83.333%,
     #a7489b 83.333%
+    
   );
 
   /* Set thee background size and repeat properties. */
   background-size: 57%;
   background-repeat: repeat;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 
   -webkit-background-clip: text;
   background-clip: text;
@@ -146,6 +153,8 @@ span {
   padding: 40px;
   background: #ca4246;
   background-color: #ca4246;
+  -webkit-appearance: none;
+  -moz-appearance: none;
   background: conic-gradient(
     #ca4246 16.666%,
     #e16541 16.666%,
@@ -177,22 +186,32 @@ p {
   margin-left: 185px;
   margin-top: -170px;
   font-size: 100px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 .container2 {
   width: 2000px;
   position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 .image {
   position: absolute;
   right: 700px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 .image2 {
   transform: scaleX(-1);
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 
 @media screen and (max-width: 1920px) {
   * {
     scale: 0.8.5;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .container2 {
     width: 1700px;
