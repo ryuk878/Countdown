@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   -webkit-appearance: none;
+  -moz-appearance: none;
 }
 
 body {
@@ -34,7 +35,8 @@ h2 {
     #476098 83.333%,
     #a7489b 83.333%
   );
-
+  -webkit-appearance: none;
+  -moz-appearance: none;
   /* Set thee background size and repeat properties. */
   background-size: 57%;
   background-repeat: repeat;
