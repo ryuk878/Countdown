@@ -26,10 +26,10 @@ const weekdays = [
 const countDown = document.querySelector(".countdown");
 const deadline = document.querySelector(".deadline");
 const time = document.querySelectorAll(".container h4");
-//datum invoeren
+//Date
 
-let futureDate = new Date(2021, 6, 9, 12, 00, 0);
-// get functies
+let futureDate = new Date(2021, 7, 27, 17, 00, 0);
+// get functions
 
 const year = futureDate.getFullYear();
 const hours = futureDate.getHours();
@@ -41,10 +41,10 @@ month = months[month];
 const date = futureDate.getDate();
 
 const weekday = weekdays[futureDate.getDay()];
-//text naar html
+//text to html
 
 const futureTime = futureDate.getTime();
-// function & berekening ms naar minuut/uur/dag
+// function & calc to min hr day
 function getRemainingTime() {
   const today = new Date().getTime();
   const timer = futureTime - today;
@@ -56,20 +56,20 @@ function getRemainingTime() {
   let days = timer / oneDay;
   days = Math.floor(days);
 
-  //remainder berekenen zodat het niet dubbel komt
+  //calculate remainder so you don't post double
   let hours = Math.floor((timer % oneDay) / oneHour);
   let minutes = Math.floor((timer % oneHour) / oneMinute);
   let seconds = Math.floor((timer % oneMinute) / 1000);
 
   const values = [days, hours, minutes, seconds];
-  // extra 0 erbij voor detail
+  // extra 0 for detail
   function format(time) {
     if (time < 10) {
       return (time = `0${time}`);
     }
     return time;
   }
-  // text naar HTML
+  // text to html
   time.forEach(function (time, index) {
     time.innerHTML = format(values[index]);
   });
