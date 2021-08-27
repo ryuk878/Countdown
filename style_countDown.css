@@ -137,6 +137,7 @@ h1,h2 {
     /* Animate the text when loading the element. */
     /* This animates it on page load and when hovering out. */
     animation: rainbow-text-animation-rev 5s ease forwards;
+ 
     
     
 }
@@ -178,24 +179,17 @@ span {
    
 }
 
-p { 
-
-position: absolute;
-margin-left: 185px;
-margin-top: -170px;
-font-size: 100px;
 
 
-}
 .container2 { 
-  width: 2000px;
-position: absolute;
+
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  
 
 }
-.image{ 
-position: absolute;
-right: 700px;
-}
+
 .image2{ 
 transform: scaleX(-1);
 
